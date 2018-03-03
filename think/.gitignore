@@ -1,4 +1,11 @@
+<<<<<<< HEAD
 /composer.lock
 /vendor
 .idea
 .DS_Store
+=======
+/composer.lock
+/vendor
+.idea
+.DS_Store
+>>>>>>> e0e786473fa2c4a6034924ea9b087f8098764833

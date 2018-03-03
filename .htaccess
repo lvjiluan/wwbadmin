@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <IfModule mod_rewrite.c>
 Options +FollowSymlinks -Multiviews
 RewriteEngine on
@@ -5,4 +6,13 @@ RewriteEngine on
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^(.*)$ index.php?s=$1 [QSA,PT,L]
+=======
+<IfModule mod_rewrite.c>
+Options +FollowSymlinks -Multiviews
+RewriteEngine on
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(.*)$ index.php?s=$1 [QSA,PT,L]
+>>>>>>> e0e786473fa2c4a6034924ea9b087f8098764833
 </IfModule>

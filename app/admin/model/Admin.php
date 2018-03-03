@@ -7,6 +7,7 @@ class Admin extends Model
 		$user=db('admin')->where('adm_username',$data['adm_username'])->find();
 		if($user){
 			if($user['adm_pwd'] == md5($data['adm_pwd'])){
+<<<<<<< HEAD
                 // 检查机构状态
                 if($user["adm_orgid"] != 0) {
                     $orginfo = db('org_info')->field("org_status")->where('org_id', $user['adm_orgid'])->find();
@@ -16,6 +17,10 @@ class Admin extends Model
                 }
                 session('adm_username',$user['adm_username']);
                 session('adm_id',$user['adm_id']);
+=======
+				session('adm_username',$user['adm_username']);
+				session('adm_id',$user['adm_id']);
+>>>>>>> e0e786473fa2c4a6034924ea9b087f8098764833
                 session('adm_orgid',$user['adm_orgid']);
 				return 1; //信息正确
 			}else{

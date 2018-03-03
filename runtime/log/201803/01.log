@@ -1,12 +1,20 @@
+<<<<<<< HEAD
 ---------------------------------------------------------------
 [ 2018-03-01T20:00:14+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/index/index.html
 [ info ] localhost:1000/admin/index/index.html [运行时间：0.285709s][吞吐率：3.50req/s] [内存消耗：1,783.62kb] [文件加载：43]
 [ info ] [ LANG ] D:\www\admin\think\lang\zh-cn.php
+=======
+---------------------------------------------------------------
+[ 2018-03-01T20:37:05+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/content/question.html
+[ info ] localhost:9002/admin/content/question.html [运行时间：0.211720s][吞吐率：4.72req/s] [内存消耗：2,082.93kb] [文件加载：45]
+[ info ] [ LANG ] /Users/lvjiluan/project/wwbadmin/think/lang/zh-cn.php
+>>>>>>> e0e786473fa2c4a6034924ea9b087f8098764833
 [ info ] [ ROUTE ] array (
   'type' => 'module',
   'module' => 
   array (
     0 => 'admin',
+<<<<<<< HEAD
     1 => 'index',
     2 => 'index',
   ),
@@ -516,12 +524,35 @@
   'content' => '20180301',
 )
 [ info ] [ LANG ] D:\www\admin/app/admin\lang\zh-cn.php
+=======
+    1 => 'content',
+    2 => 'question',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=md83pd14etoskju74la8srm19s',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:9002/',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'localhost:9002',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /Users/lvjiluan/project/wwbadmin/app/admin/lang/zh-cn.php
+>>>>>>> e0e786473fa2c4a6034924ea9b087f8098764833
 [ info ] [ SESSION ] INIT array (
   'id' => '',
   'var_session_id' => '',
   'prefix' => 'think',
   'type' => '',
   'auto_start' => true,
+<<<<<<< HEAD
 )
 [ info ] [ DB ] INIT mysql
 [ info ] [ RUN ] app\admin\controller\Common->_empty[ D:\www\admin\app\admin\controller\Common.php ]
@@ -533,11 +564,32 @@
 [ 2018-03-01T20:26:41+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/userinfo/basic.html
 [ info ] localhost:1000/admin/userinfo/basic.html [运行时间：0.138018s][吞吐率：7.25req/s] [内存消耗：1,915.75kb] [文件加载：48]
 [ info ] [ LANG ] D:\www\admin\think\lang\zh-cn.php
+=======
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Content->question[ /Users/lvjiluan/project/wwbadmin/app/admin/controller/Content.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.037578s ] mysql:dbname=wawabang_test;host=106.14.113.124;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tes_system_basic` [ RunTime:0.027449s ]
+[ sql ] [ SQL ] SELECT * FROM `tes_system_basic` WHERE  `sys_id` = 1 LIMIT 1 [ RunTime:0.015067s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tes_question` [ RunTime:0.018403s ]
+[ sql ] [ SQL ] SELECT * FROM `tes_question` LIMIT 0,5 [ RunTime:0.015384s ]
+[ error ] [8]未定义数组索引: keyword[/Users/lvjiluan/project/wwbadmin/app/admin/controller/Content.php:499]
+[ error ] [8]未定义数组索引: pageIndex[/Users/lvjiluan/project/wwbadmin/app/admin/controller/Content.php:503]
+[ error ] [8]未定义变量: where[/Users/lvjiluan/project/wwbadmin/app/admin/controller/Content.php:506]
+[ error ] [8]未定义变量: org_result[/Users/lvjiluan/project/wwbadmin/app/admin/controller/Content.php:510]
+[ error ] [2]implode(): Invalid arguments passed[/Users/lvjiluan/project/wwbadmin/app/admin/controller/Content.php:510]
+---------------------------------------------------------------
+[ 2018-03-01T20:38:19+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/content/question.html
+[ info ] localhost:9002/admin/content/question.html [运行时间：0.130958s][吞吐率：7.64req/s] [内存消耗：2,109.53kb] [文件加载：46]
+[ info ] [ LANG ] /Users/lvjiluan/project/wwbadmin/think/lang/zh-cn.php
+>>>>>>> e0e786473fa2c4a6034924ea9b087f8098764833
 [ info ] [ ROUTE ] array (
   'type' => 'module',
   'module' => 
   array (
     0 => 'admin',
+<<<<<<< HEAD
     1 => 'userinfo',
     2 => 'basic',
   ),
@@ -842,20 +894,51 @@
 [ info ] [ PARAM ] array (
 )
 [ info ] [ LANG ] D:\www\admin/app/admin\lang\zh-cn.php
+=======
+    1 => 'content',
+    2 => 'question',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=md83pd14etoskju74la8srm19s',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:9002/',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'localhost:9002',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /Users/lvjiluan/project/wwbadmin/app/admin/lang/zh-cn.php
+>>>>>>> e0e786473fa2c4a6034924ea9b087f8098764833
 [ info ] [ SESSION ] INIT array (
   'id' => '',
   'var_session_id' => '',
   'prefix' => 'think',
   'type' => '',
   'auto_start' => true,
+<<<<<<< HEAD
 )
 [ info ] [ DB ] INIT mysql
 [ info ] [ RUN ] app\admin\controller\Userinfo->basic[ D:\www\admin\app\admin\controller\Userinfo.php ]
 [ info ] [ VIEW ] D:\www\admin/app/admin\view\userinfo\basic.html [ array (
+=======
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Content->question[ /Users/lvjiluan/project/wwbadmin/app/admin/controller/Content.php ]
+[ info ] [ VIEW ] /Users/lvjiluan/project/wwbadmin/app/admin/view/content/question.html [ array (
+>>>>>>> e0e786473fa2c4a6034924ea9b087f8098764833
   0 => 'keyword',
   1 => 'pageIndex',
   2 => 'count',
   3 => 'list',
+<<<<<<< HEAD
 ) ]
 [ info ] [ LOG ] INIT File
 [ sql ] [ DB ] CONNECT:[ UseTime:0.088937s ] mysql:dbname=wawabang_test;host=106.14.113.124;port=3306;charset=utf8
@@ -866,3 +949,18 @@
 [ error ] [8]未定义数组索引: keyword[D:\www\admin\app\admin\controller\Userinfo.php:96]
 [ error ] [8]未定义数组索引: pageIndex[D:\www\admin\app\admin\controller\Userinfo.php:101]
 [ error ] [8]未定义变量: page[D:\www\admin\runtime\temp\ea6667a08217ecb34d673e85120f75ad.php:82]
+=======
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.021579s ] mysql:dbname=wawabang_test;host=106.14.113.124;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tes_system_basic` [ RunTime:0.014199s ]
+[ sql ] [ SQL ] SELECT * FROM `tes_system_basic` WHERE  `sys_id` = 1 LIMIT 1 [ RunTime:0.013497s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tes_question` [ RunTime:0.021512s ]
+[ sql ] [ SQL ] SELECT * FROM `tes_question` LIMIT 0,5 [ RunTime:0.016804s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tes_question` LIMIT 1 [ RunTime:0.015538s ]
+[ error ] [8]未定义数组索引: keyword[/Users/lvjiluan/project/wwbadmin/app/admin/controller/Content.php:499]
+[ error ] [8]未定义数组索引: pageIndex[/Users/lvjiluan/project/wwbadmin/app/admin/controller/Content.php:503]
+[ error ] [8]未定义变量: where[/Users/lvjiluan/project/wwbadmin/app/admin/controller/Content.php:506]
+[ error ] [8]未定义变量: org_result[/Users/lvjiluan/project/wwbadmin/app/admin/controller/Content.php:510]
+[ error ] [8]未定义变量: where[/Users/lvjiluan/project/wwbadmin/app/admin/controller/Content.php:527]
+>>>>>>> e0e786473fa2c4a6034924ea9b087f8098764833

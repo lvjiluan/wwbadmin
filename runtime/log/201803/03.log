@@ -1,0 +1,187 @@
+---------------------------------------------------------------
+[ 2018-03-03T18:52:44+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/content/circlearticleView.html?tma_id=4
+[ info ] localhost:9002/admin/content/circlearticleView.html?tma_id=4 [运行时间：0.164039s][吞吐率：6.10req/s] [内存消耗：2,016.25kb] [文件加载：40]
+[ info ] [ LANG ] /Users/lvjiluan/project/wwbadmin/think/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'content',
+    2 => 'circlearticleView',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-cn',
+  'referer' => 'http://localhost:9002/admin/content/circlearticle.html',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/604.5.6 (KHTML, like Gecko) Version/11.0.3 Safari/604.5.6',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'cookie' => 'PHPSESSID=tbnt6a1te378ma3t7biilb40m1',
+  'host' => 'localhost:9002',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'tma_id' => '4',
+)
+[ info ] [ LANG ] /Users/lvjiluan/project/wwbadmin/app/admin/lang/zh-cn.php
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Content->circlearticleView[ /Users/lvjiluan/project/wwbadmin/app/admin/controller/Content.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.025320s ] mysql:dbname=wawabang_test;host=106.14.113.124;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tes_system_basic` [ RunTime:0.019807s ]
+[ sql ] [ SQL ] SELECT * FROM `tes_system_basic` WHERE  `sys_id` = 1 LIMIT 1 [ RunTime:0.016133s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tes_moments_article` [ RunTime:0.018787s ]
+[ sql ] [ SQL ] SELECT * FROM `tes_moments_article` WHERE  `tma_id` = 4 LIMIT 1 [ RunTime:0.014687s ]
+---------------------------------------------------------------
+[ 2018-03-03T18:52:54+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/index/index.html
+[ info ] localhost:9002/admin/index/index.html [运行时间：0.163344s][吞吐率：6.12req/s] [内存消耗：2,059.50kb] [文件加载：43]
+[ info ] [ LANG ] /Users/lvjiluan/project/wwbadmin/think/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-cn',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/604.5.6 (KHTML, like Gecko) Version/11.0.3 Safari/604.5.6',
+  'cookie' => 'PHPSESSID=tbnt6a1te378ma3t7biilb40m1',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'host' => 'localhost:9002',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /Users/lvjiluan/project/wwbadmin/app/admin/lang/zh-cn.php
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Index->index[ /Users/lvjiluan/project/wwbadmin/app/admin/controller/Index.php ]
+[ info ] [ VIEW ] /Users/lvjiluan/project/wwbadmin/app/admin/view/index/index.html [ array (
+  0 => 'menus',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.027056s ] mysql:dbname=wawabang_test;host=106.14.113.124;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tes_system_basic` [ RunTime:0.018412s ]
+[ sql ] [ SQL ] SELECT * FROM `tes_system_basic` WHERE  `sys_id` = 1 LIMIT 1 [ RunTime:0.014965s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tes_admin` [ RunTime:0.014142s ]
+[ sql ] [ SQL ] SELECT * FROM `tes_admin` LEFT JOIN `tes_auth_group` `tes_auth_group` ON `adm_id`=`agr_id` WHERE  (  adm_id=1 ) LIMIT 1 [ RunTime:0.013230s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tes_auth_rule` [ RunTime:0.019149s ]
+[ sql ] [ SQL ] SELECT * FROM `tes_auth_rule` WHERE  `aru_status` = 1  AND `aru_id` IN (0,1,2,3,4,5,6,7,8,9,10,11,316,12,13,14,15,16,17,18,19,314,315,20,21,22,23,24,25,26,27,28,29,30,0) ORDER BY `aru_sort` [ RunTime:0.019583s ]
+---------------------------------------------------------------
+[ 2018-03-03T18:52:54+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/index/main.html
+[ info ] localhost:9002/admin/index/main.html [运行时间：0.128426s][吞吐率：7.79req/s] [内存消耗：1,942.63kb] [文件加载：42]
+[ info ] [ LANG ] /Users/lvjiluan/project/wwbadmin/think/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'main',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-cn',
+  'referer' => 'http://localhost:9002/admin/index/index.html',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/604.5.6 (KHTML, like Gecko) Version/11.0.3 Safari/604.5.6',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'cookie' => 'PHPSESSID=tbnt6a1te378ma3t7biilb40m1',
+  'host' => 'localhost:9002',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /Users/lvjiluan/project/wwbadmin/app/admin/lang/zh-cn.php
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Index->main[ /Users/lvjiluan/project/wwbadmin/app/admin/controller/Index.php ]
+[ info ] [ VIEW ] /Users/lvjiluan/project/wwbadmin/app/admin/view/index/main.html [ array (
+  0 => 'config',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.026265s ] mysql:dbname=wawabang_test;host=106.14.113.124;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tes_system_basic` [ RunTime:0.016432s ]
+[ sql ] [ SQL ] SELECT * FROM `tes_system_basic` WHERE  `sys_id` = 1 LIMIT 1 [ RunTime:0.016116s ]
+[ sql ] [ SQL ] SELECT VERSION() AS ver [ RunTime:0.014926s ]
+---------------------------------------------------------------
+[ 2018-03-03T18:53:02+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/organization/basic.html
+[ info ] localhost:9002/admin/organization/basic.html [运行时间：0.191059s][吞吐率：5.23req/s] [内存消耗：2,302.34kb] [文件加载：46]
+[ info ] [ LANG ] /Users/lvjiluan/project/wwbadmin/think/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'organization',
+    2 => 'basic',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-cn',
+  'referer' => 'http://localhost:9002/admin/index/index.html',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/604.5.6 (KHTML, like Gecko) Version/11.0.3 Safari/604.5.6',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'cookie' => 'PHPSESSID=tbnt6a1te378ma3t7biilb40m1',
+  'host' => 'localhost:9002',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /Users/lvjiluan/project/wwbadmin/app/admin/lang/zh-cn.php
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Organization->basic[ /Users/lvjiluan/project/wwbadmin/app/admin/controller/Organization.php ]
+[ info ] [ VIEW ] /Users/lvjiluan/project/wwbadmin/app/admin/view/organization/basic.html [ array (
+  0 => 'list',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.029988s ] mysql:dbname=wawabang_test;host=106.14.113.124;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tes_system_basic` [ RunTime:0.022289s ]
+[ sql ] [ SQL ] SELECT * FROM `tes_system_basic` WHERE  `sys_id` = 1 LIMIT 1 [ RunTime:0.056435s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tes_org_info` [ RunTime:0.021336s ]
+[ sql ] [ SQL ] SELECT * FROM `tes_org_info` LEFT JOIN `tes_org_detail` `tes_org_detail` ON `org_id`=`ode_orgid` WHERE  `org_status` = 1 [ RunTime:0.022365s ]
+[ error ] [8]未定义变量: page[/Users/lvjiluan/project/wwbadmin/runtime/temp/582e5078a9d888414e6189d623e81f09.php:68]
